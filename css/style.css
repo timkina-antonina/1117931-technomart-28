@@ -1,3 +1,326 @@
+/* variables */
+
+:root {
+  --basic-blue-lighter: #F1F5F7;
+  --basic-blue: #32425C;
+  --basic-blue-dark: #293449;
+  --basic-blue-darker: #212A3A;
+
+  --basic-grey-lighter: #f9f5f0;
+  --basic-grey-light: #e5e5e5;
+  --basic-grey: #c5c5c5;
+  --basic-grey-dark: #a9a9a9;
+
+  --basic-red: #EE3643;
+  --basic-red-dark: #BA2732;
+
+  --basic-green-light: #5FBB2D;
+  --basic-green: #63A63E;
+
+  --basic-yellow: #FFD180;
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+
+  --special-yellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-lilac: #DC91D8;
+  --special-green: #8ED78F;
+}
+
+/* global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header-top */
+
+.header {
+  background-color: var(--basic-blue-lighter);
+  font-family: "Cuprum", Arial, sans-serif;
+}
+.header-top {
+  background-color: var(--basic-blue-dark);
+  font-size: 18px;
+}
+.header-logo, .footer-logo {
+  background-color: var(--basic-red);
+}
+.header-logo:active, .footer-logo:active {
+  background-color: var(--basic-red-dark);
+}
+.search {
+  font: inherit;
+  background-color: transparent;
+  border: none;
+}
+.search::placeholder {
+  color: var(--basic-white);
+}
+.header-top .button:active {
+  background-color: var(--basic-blue-darker);
+}
+.header-top .button-checkout {
+  background-color: var(--basic-green);
+}
+.header-top .button-checkout:active {
+  background-color: var(--basic-green-light);
+}
+.button-full-basket {
+  background-color: var(--basic-red);
+}
+.basket-content a {
+  color: var(--basic-white);
+}
+
+/* header-content */
+
+.header-content h1, .header-content h2 {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  font-weight: normal;
+  color: var(--basic-red);
+}
+.header-content .contact {
+  font-size: 14px;
+  color: var(--basic-blue);
+}
+.header-content .phone-number {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--basic-red);
+  border: solid 3px var(--basic-white);
+}
+.header-content .button {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  font-size: 21px;
+  line-height: 21px;
+}
+.header-content .button:hover, .header-content .button:focus {
+  color: var(--basic-red);
+}
+.header-content .button:active {
+  color: var(--basic-grey);
+}
+.user-block .link {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-blue);
+}
+.user-block .link:hover, .user-block .link:focus {
+  color: var(--basic-red);
+}
+.user-block .link:active {
+  color: var(--basic-grey);
+}
+
+/* header-navigation */
+
+.header-navigation {
+  background-color: var(--basic-blue);
+}
+.site-navigation, .footer-site-navigation {
+  list-style: none;
+}
+.site-navigation a, .footer-site-navigation a {
+  color: var(--basic-white);
+  font-size: 18px;
+}
+.site-navigation a:hover, .site-navigation a:focus  {
+    background-color: var(--basic-blue-dark);
+}
+.site-navigation a:active  {
+    background-color: var(--basic-blue-darker);
+}
+
+/* company, contact */
+
+.transport-company li {
+  font-family: Cuprum;
+  font-size: 18px;
+  list-style: none;
+}
+.company .button, .contacts .button {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  text-transform: uppercase;
+}
+.company .button:active, .contacts .button:active, .header-top .button-full-basket:active {
+  background-color: var(--basic-red-dark);
+}
+
+/* breadcrumbs */
+
+.breadcrumbs li {
+  list-style: none;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+.breadcrumbs a {
+  color: var(--basic-black);
+}
+
+/* title */
+.title-1 {
+  font-family: Cuprum;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: var(--basic-grey-light);
+}
+
+/* filter */
+
+.filter fieldset {
+  border: none;
+}
+.filter legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.filter label {
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.filter li {
+  list-style: none;
+}
+.filter .button {
+  font: inherit;
+  line-height: 18px;
+  background-color: transparent;
+  border: solid 1px var(--basic-grey-light);
+  text-transform: uppercase;
+}
+
+/* catalog */
+
+.catalog-article {
+  border: solid 1px var(--basic-grey-light);
+}
+.catalog-article h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+.catalog-article p {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: var(--basic-grey-dark);
+}
+.catalog-article .button-price {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  text-transform: uppercase;
+}
+.catalog-article .button {
+  font-family: Cuprum;
+  text-transform: uppercase;
+}
+.catalog-article .button-buy {
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+}
+.catalog-article .button-deferred {
+  color: var(--basic-blue);
+  border: solid 3px var(--basic-green);
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--basic-blue);
+  font-family: Cuprum;
+  color: var(--basic-white);
+}
+.footer-contact p {
+  font-size: 18px;
+}
+.footer-site-navigation a:hover, .footer-site-navigation a:focus  {
+  text-decoration: underline;
+}
+.footer-site-navigation a:active  {
+  /* полупрозрачность */
+}
+.footer-navigation li {
+  list-style: none;
+}
+.footer-navigation a {
+  list-style: none;
+  color: var(--basic-yellow);
+  font-size: 18px;
+}
+.footer-navigation a:hover, .footer-link:hover,
+.footer-navigation a:focus, .footer-link:focus {
+  text-decoration: underline;
+}
+.footer-navigation a:active {
+  /* полупрозрачность */
+}
+.footer-bottom {
+  background-color: var(--basic-blue-dark);
+  font-size: 16px;
+}
+.footer-social li {
+  list-style: none;
+}
+.footer-link {
+  color: var(--basic-yellow);
+}
+.footer-link:active {
+  color: var(--basic-red);
+}
+
+.index-columns h2 {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+/* button */
+
+.button {
+  font-family: Cuprum;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+
+
+.modal {
+  display: none;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
