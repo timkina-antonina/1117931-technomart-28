@@ -49,6 +49,26 @@ img {
   height: auto;
 }
 
+/* grid */
+
+.page {
+  height: 100%;
+}
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+/* container */
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 /* header-top */
 
 .header {
@@ -57,7 +77,11 @@ img {
 }
 .header-top {
   background-color: var(--basic-blue-dark);
+}
+.header-top .container {
   font-size: 18px;
+  display: grid;
+  grid-template-columns: 220px 1fr 1fr;
 }
 .header-logo, .footer-logo {
   background-color: var(--basic-red);
@@ -90,7 +114,13 @@ img {
 }
 
 /* header-content */
-
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  margin: 0;
+  padding: 0;
+}
 .header-content h1, .header-content h2 {
   font-size: 16px;
   line-height: 23px;
@@ -153,7 +183,18 @@ img {
 }
 
 /* company, contact */
-
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.company {
+  width: 460px;
+}
+.contacts {
+  width: 300px;
+}
 .transport-company li {
   font-family: Cuprum;
   font-size: 18px;
@@ -187,6 +228,14 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   background-color: var(--basic-grey-light);
+}
+
+/* filter-and-catalog */
+
+.filter-and-catalog {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  column-gap: 20px;
 }
 
 /* filter */
@@ -254,13 +303,41 @@ img {
   color: var(--basic-blue);
   border: solid 3px var(--basic-green);
 }
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
 
 /* footer */
 
 .footer {
-  background-color: var(--basic-blue);
   font-family: Cuprum;
   color: var(--basic-white);
+}
+.footer-top {
+  background-color: var(--basic-blue);
+}
+.footer-top .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+.footer-top nav {
+  display: grid;
+  grid-template-row: 1fr 1fr;
+}
+.footer-bottom {
+  background-color: var(--basic-blue-dark);
+  font-size: 16px;
+}
+.footer-bottom .container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  column-gap: 20px;
+}
+.footer-contact {
+  width: 330px;
 }
 .footer-contact p {
   font-size: 18px;
@@ -285,10 +362,6 @@ img {
 }
 .footer-navigation a:active {
   /* полупрозрачность */
-}
-.footer-bottom {
-  background-color: var(--basic-blue-dark);
-  font-size: 16px;
 }
 .footer-social li {
   list-style: none;
