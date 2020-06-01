@@ -258,11 +258,13 @@ img {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 20px;
+  gap: 20px;
 }
 .popular-manufacturers li {
   list-style: none;
-}
+  border: solid 1px var(--basic-grey-light);
+  text-align: center;
+  }
 
 /* services */
 .services {
@@ -279,6 +281,11 @@ img {
 .services .button.active {
   color: var(--basic-blue);
   background-color: var(--basic-white);
+}
+.services-slider {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  column-gap: 60px;
 }
 
 /* company, contact */
@@ -301,12 +308,13 @@ img {
   list-style: none;
 }
 .company .button, .contacts .button,
-.popular-products .button, .title-block .button {
+.popular-products .button, .title-block .button, .promo-perforators .button {
   color: var(--basic-white);
   background-color: var(--basic-red);
   text-transform: uppercase;
 }
-.company .button:active, .contacts .button:active, .header-top .button-full-basket:active {
+.company .button:active, .contacts .button:active, .header-top .button-full-basket:active,
+.promo-perforators .button:active {
   background-color: var(--basic-red-dark);
 }
 
@@ -417,9 +425,32 @@ img {
   gap: 20px;
 }
 
+/* pagination */
+
+.pagination {
+  padding-top: 48px;
+  padding-bottom: 59px;
+}
+.pagination a {
+  font: inherit;
+  color: inherit;
+  line-height: 18px;
+  border: solid 1px var(--basic-grey-light);
+  text-transform: uppercase;
+}
+.pagination .active {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+.pagination a:not(:last-child) {
+  margin-right: 10px;
+}
+
 /* about-perforators */
 .about-perforators {
   background-color: var(--basic-blue-lighter);
+  padding-top: 64px;
+  padding-bottom: 68px;
 }
 
 /* footer */
@@ -503,6 +534,7 @@ img {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
 }
 .text-basic-blue {
   color: var(--basic-blue);
