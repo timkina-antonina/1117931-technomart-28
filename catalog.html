@@ -17,9 +17,12 @@
           <a class="header-logo" href="index.html" aria-label="Ссылка на главную Техномарта">
             <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип Техномарта">
           </a>
-          <form action="https://echo.htmlacademy.ru/" method="get">
+          <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
             <label for="search" class="visually-hidden">Поиск на сайте</label>
             <input class="search" type="text" id="search" name="search" placeholder="Поиск:">
+            <svg class="icon-search" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+            </svg>
           </form>
           <div class="basket-content">
             <a class="button button-deferred" href="deferred.html">Закладки: 0</a>
@@ -37,9 +40,17 @@
           </div>
           <div class="user-block-output">
             <div class="button-group">
-              <a class="button button-user" href="user.html">Равшан Джамшутович</a>
+              <a class="button button-user" href="user.html">
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z" fill="#C5C5C5"/>
+                </svg>
+                Равшан Джамшутович</a>
               <a class="button button-output" href="index.html">
                 <span class="visually-hidden">Выход</span>
+                <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5"/>
+                  <path d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z" fill="#C5C5C5"/>
+                </svg>
               </a>
             </div>
             <div class="button-group account-block">
@@ -142,7 +153,7 @@
             <div class="products">
               <article class="catalog-article">
                 <img src="img/perforator-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-                <div class="invisible">
+                <div class="catalog-button-group-hover">
                   <a class="button button-buy" href="catalog-basket.html">Купить</a>
                   <a class="button button-deferred" href="catalog-deferred.html">В закладки</a>
                 </div>
@@ -152,9 +163,9 @@
               </article>
               <article class="catalog-article">
                 <img src="img/perforator-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-                <div class="invisible">
-                  <a class="button" href="catalog-basket.html">Купить</a>
-                  <a class="button" href="catalog-deferred.html">В закладки</a>
+                <div class="catalog-button-group-hover" class="invisible">
+                  <a class="button button-buy" href="catalog-basket.html">Купить</a>
+                  <a class="button button-deferred" href="catalog-deferred.html">В закладки</a>
                 </div>
                 <h3>Перфоратор BOSCH BFG 6000</h3>
                 <p>30500 P.</p>
@@ -162,9 +173,9 @@
               </article>
               <article class="catalog-article new-product">
                 <img src="img/perforator-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-                <div class="invisible">
-                  <a class="button" href="catalog-basket.html">Купить</a>
-                  <a class="button" href="catalog-deferred.html">В закладки</a>
+                <div class="catalog-button-group-hover">
+                  <a class="button button-buy" href="catalog-basket.html">Купить</a>
+                  <a class="button button-deferred" href="catalog-deferred.html">В закладки</a>
                 </div>
                 <h3>Перфоратор BOSCH BFG 6000</h3>
                 <p>30500 P.</p>
@@ -172,9 +183,9 @@
               </article>
               <article class="catalog-article new-product">
                 <img src="img/perforator-bosch-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-                <div class="invisible">
-                  <a class="button" href="catalog-basket.html">Купить</a>
-                  <a class="button" href="catalog-deferred.html">В закладки</a>
+                <div class="catalog-button-group-hover">
+                  <a class="button button-buy" href="catalog-basket.html">Купить</a>
+                  <a class="button button-deferred" href="catalog-deferred.html">В закладки</a>
                 </div>
                 <h3>Перфоратор BOSCH BFG 3000</h3>
                 <p>22500 P.</p>
@@ -182,9 +193,9 @@
               </article>
               <article class="catalog-article">
                 <img src="img/perforator-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-                <div class="invisible">
-                  <a class="button" href="catalog-basket.html">Купить</a>
-                  <a class="button" href="catalog-deferred.html">В закладки</a>
+                <div class="catalog-button-group-hover">
+                  <a class="button button-buy" href="catalog-basket.html">Купить</a>
+                  <a class="button button-deferred" href="catalog-deferred.html">В закладки</a>
                 </div>
                 <h3>Перфоратор BOSCH BFG 6000</h3>
                 <p>30500 P.</p>
@@ -192,18 +203,18 @@
               </article>
               <article class="catalog-article new-product">
                 <img src="img/perforator-bosch-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-                <div class="invisible">
-                  <a class="button" href="catalog-basket.html">Купить</a>
-                  <a class="button" href="catalog-deferred.html">В закладки</a>
+                <div class="catalog-button-group-hover">
+                  <a class="button button-buy" href="catalog-basket.html">Купить</a>
+                  <a class="button button-deferred" href="catalog-deferred.html">В закладки</a>
                 </div>
                 <h3>Перфоратор BOSCH BFG 2000</h3>
                 <a class="button-price" href="perforator-bosch-bfg-2000.html">15500 P.</a>
               </article>
               <article class="catalog-article new-product">
                 <img src="img/perforator-bosch-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-                <div class="invisible">
-                  <a class="button" href="catalog-basket.html">Купить</a>
-                  <a class="button" href="catalog-deferred.html">В закладки</a>
+                <div class="catalog-button-group-hover">
+                  <a class="button button-buy" href="catalog-basket.html">Купить</a>
+                  <a class="button button-deferred" href="catalog-deferred.html">В закладки</a>
                 </div>
                 <h3>Перфоратор BOSCH BFG 3000</h3>
                 <p>22500 Р.</p>
@@ -211,9 +222,9 @@
               </article>
               <article class="catalog-article">
                 <img src="img/perforator-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-                <div class="invisible">
-                  <a class="button" href="catalog-basket.html">Купить</a>
-                  <a class="button" href="catalog-deferred.html">В закладки</a>
+                <div class="catalog-button-group-hover">
+                  <a class="button button-buy" href="catalog-basket.html">Купить</a>
+                  <a class="button button-deferred" href="catalog-deferred.html">В закладки</a>
                 </div>
                 <h3>Перфоратор BOSCH BFG 6000</h3>
                 <p>30500 P.</p>
@@ -221,9 +232,9 @@
               </article>
               <article class="catalog-article new-product">
                 <img src="img/perforator-bosch-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-                <div class="invisible">
-                  <a class="button" href="catalog-basket.html">Купить</a>
-                  <a class="button" href="catalog-deferred.html">В закладки</a>
+                <div class="catalog-button-group-hover">
+                  <a class="button button-buy" href="catalog-basket.html">Купить</a>
+                  <a class="button button-deferred" href="catalog-deferred.html">В закладки</a>
                 </div>
                 <h3>Перфоратор BOSCH BFG 2000</h3>
                 <a class="button-price" href="perforator-bosch-bfg-2000.html">12500 P.</a>
