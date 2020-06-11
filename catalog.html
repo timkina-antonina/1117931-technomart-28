@@ -97,10 +97,12 @@
                 <div class="range-controls color-special-grey">
                   <h3 class="visually-hidden">Ползунок изменения цены</h3>
                   <div class="scale">
-                    <div class="bar" style="width: 30%; margin-left: 20%"></div>
+                    <!-- <div class="bar" style="width: 30%; margin-left: 20%"></div> -->
+                    <div class="bar"></div>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
-                  <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <!-- <div class="toggle toggle-max" tabindex="0" style="left: 73%"></div> -->
+                  <div class="toggle toggle-max" tabindex="0"></div>
                 </div>
                 <div class="price-controls">
                   <input class="color-special-grey" type="number" name="min-price" value ="0" aria-label="Минимальная цена">
@@ -133,7 +135,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-supply">
                 <legend>Питание:</legend>
                 <ul>
                   <li class="filter-option">
@@ -275,10 +277,10 @@
         <div class="container">
           <h2 class="title">Пара слов о перфораторах</h2>
           <p>Перфоратор — универсальный строительный инструмент. Предназначен для
-              сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют
+              сверления и долбления отверстий в кирпиче, бетоне и камне. <br>Существуют
               электромеханические и пневматические перфораторы. Современные модели
               могут выполнять функции дрели, шуруповерта и отбойного молотка.
-              В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве
+              <br>В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве
               будут совмещены отбойный молоток и ударная дрель.</p>
           </div>
       </section>
@@ -304,7 +306,7 @@
             <ul class="footer-navigation">
               <li><a href="materials.html">Материалы</a></li>
               <li><a href="technique.html">Техника</a></li>
-              <li><a href="tools.html">Инструменты</a></li>
+              <li><a href="tools.html">Инструмент</a></li>
               <li><a href="special-offers.html">Спецпредложения</a></li>
             </ul>
           </nav>
@@ -343,8 +345,8 @@
               </a>
             </li>
           </ul>
-          <p>Обратная связь:<a class="footer-link" href="">mail@htmlacademy.ru</a></p>
-          <p>Разработано — <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+          <p class="footer-feedback">Обратная связь:<a class="footer-link" href="">mail@htmlacademy.ru</a></p>
+          <p class="footer-developer">Разработано — <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
         </div>
       </section>
     </footer>
