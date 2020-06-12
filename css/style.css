@@ -1011,10 +1011,6 @@ input[type="radio"].visually-hidden {
 .range-controls .toggle-max {
   left: 159px;
 }
-.range-controls .toggle-min:focus,
-.range-controls .toggle-max:focus {
-  outline: none;
-}
 .price-controls {
   display: flex;
   justify-content: space-between;
@@ -1057,7 +1053,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: .7;
+  opacity: 0.7;
 }
 .filter-input-checkbox:checked + label::after {
   content: "";
@@ -1069,7 +1065,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: .7;
+  opacity: 0.7;
 }
 .filter-input-checkbox + label:hover::before,
 .filter-input-checkbox + label:focus::before,
@@ -1079,10 +1075,14 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox:checked + label:active::after {
   opacity: 1;
 }
-.filter-input-checkbox:disabled + label::before,
-.filter-input-checkbox:checked:disabled + label::after {
-  opacity: 0.4;
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label,
+.filter-input-radio:hover + label,
+.filter-input-radio:focus + label {
+  color: var(--basic-grey);
 }
+.filter-input-checkbox:disabled + label::before,
+.filter-input-checkbox:checked:disabled + label::after,
 .filter-input-checkbox:disabled + label,
 .filter-input-checkbox:checked:disabled + label {
   opacity: 0.4;
@@ -1100,7 +1100,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: .7;
+  opacity: 0.7;
 }
 .filter-input-radio:checked + label::after {
   content: "";
@@ -1112,7 +1112,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: .7;
+  opacity: 0.7;
 }
 .filter-input-radio + label:hover::before,
 .filter-input-radio + label:focus::before,
@@ -1123,12 +1123,10 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 .filter-input-radio:disabled + label::before,
-.filter-input-radio:checked:disabled + label::after {
-  opacity: 0.4;
-}
+.filter-input-radio:checked:disabled + label::after,
 .filter-input-radio:disabled + label,
 .filter-input-radio:checked:disabled + label {
-  opacity: .4;
+  opacity: 0.4;
 }
 .filter-supply legend {
   margin-bottom: 9px;
@@ -1169,9 +1167,11 @@ input[type="radio"].visually-hidden {
 .sorting .link {
   display: inline-block;
   color: rgba(0, 0, 0, 0.3);
-
-line-height: 0.85;
+  line-height: 0.85;
   border-bottom: 1px dotted var(--basic-red);
+}
+.sorting .link:first-child {
+  margin-left: 60px;
 }
 .sorting .link.active {
   color: var(--basic-red);
