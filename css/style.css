@@ -1648,6 +1648,9 @@ ul.footer-site-navigation {
   height: 449px;
 }
 .modal-map iframe {
+  background-image: url("../img/map-big.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   border: none;
 }
 
