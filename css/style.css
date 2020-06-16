@@ -578,9 +578,11 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 .site-wrapper-1 {
+  background-color: var(--basic-grey);
   background-image: url("../img/perforator.jpg");
 }
 .site-wrapper-2 {
+  background-color: var(--basic-grey);
   background-image: url("../img/drill.jpg");
 }
 .promo-slider ul {
@@ -885,6 +887,7 @@ input[type="radio"].visually-hidden {
 .breadcrumbs li:first-child {
   width: 14px;
   height: 12px;
+  background-color: var(--basic-grey);
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
   background-position: 0 25px;
@@ -1417,6 +1420,9 @@ input[type="radio"].visually-hidden {
 .footer-contact p {
   font-size: 18px;
   margin-top: 27px;
+}
+.footer-contact .phone-number {
+  color: var(--basic-white);
 }
 
 /* footer-top nav */
