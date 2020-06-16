@@ -463,7 +463,7 @@ input[type="radio"].visually-hidden {
 /* promo-block */
 
 .promo-block {
-  font-family: "Cuprum", Arial, sans-serif;;
+  font-family: "Cuprum", Arial, sans-serif;
   color: var(--basic-white);
   margin: 59px 0;
   padding: 0;
