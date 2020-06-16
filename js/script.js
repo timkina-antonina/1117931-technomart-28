@@ -67,6 +67,7 @@ var addedtocartPopup = document.querySelector(".modal-added-to-cart");
 if (addedtocartPopup) {
   var addedtocartLinks = document.querySelectorAll(".button-buy");
   var addedtocartClose = addedtocartPopup.querySelector(".modal-close");
+  var addedtocartButton = addedtocartPopup.querySelector(".modal-added-to-cart-button");
 
   for(var i=0;i<addedtocartLinks.length;i++) {
     addedtocartLinks[i].addEventListener("click", function(evt) {
@@ -76,6 +77,11 @@ if (addedtocartPopup) {
   }
 
   addedtocartClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    addedtocartPopup.classList.remove("modal-show");
+  });
+
+  addedtocartButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     addedtocartPopup.classList.remove("modal-show");
   });
