@@ -1112,7 +1112,7 @@ input[type="radio"].visually-hidden {
 }
 .filter-input-checkbox:focus + label,
 .filter-input-radio:focus + label {
-  color: var(--basic-grey);
+  text-decoration: underline;
 }
 .filter-input-checkbox:disabled + label::before,
 .filter-input-checkbox:checked:disabled + label::after,
