@@ -13,6 +13,7 @@
   --basic-grey-dark: #a9a9a9;
 
   --basic-red: #EE3643;
+  --basic-red-d: #ca2c37;
   --basic-red-dark: #BA2732;
   --basic-red-darker: #8E1E26;
 
@@ -588,7 +589,10 @@ input[type="radio"].visually-hidden {
   padding-right: 26px;
 }
 .promo-slider a:hover,
-.promo-slider a:focus,
+.promo-slider a:focus
+ {
+  background-color: var(--basic-red-d);
+}
 .promo-slider a:active {
   background-color: var(--basic-red-dark);
 }
@@ -812,9 +816,11 @@ input[type="radio"].visually-hidden {
   padding: 10px 40px;
   border-radius: 2px;
 }
-.services-slider .button-credit:active,
 .services-slider .button-credit:hover,
 .services-slider .button-credit:focus {
+  background-color: var(--basic-red-d);
+}
+.services-slider .button-credit:active {
   background-color: var(--basic-red-dark);
 }
 
@@ -887,16 +893,18 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-red);
   text-transform: uppercase;
 }
-.company .button:active,
-.contacts .button:active,
-.header-top .button-full-basket:active,
-.promo-perforators .button:active,
 .company .button:hover,
 .contacts .button:hover,
 .promo-perforators .button:hover,
 .company .button:focus,
 .contacts .button:focus,
 .promo-perforators .button:focus {
+  background-color: var(--basic-red-d);
+}
+.company .button:active,
+.contacts .button:active,
+.header-top .button-full-basket:active,
+.promo-perforators .button:active {
   background-color: var(--basic-red-dark);
 }
 
@@ -1602,9 +1610,11 @@ ul.footer-site-navigation {
   padding-bottom: 7px;
   font-size: 14px;
 }
-.title-block .button:active,
 .title-block .button:hover,
 .title-block .button:focus {
+  background-color: var(--basic-red-d);
+}
+.title-block .button:active {
   background-color: var(--basic-red-dark);
 }
 .title-calalog {
@@ -1757,9 +1767,13 @@ ul.footer-site-navigation {
   color: var(--basic-white);
   width: 100%;
 }
-.modal-feedback-button:active,
 .modal-feedback-button:hover,
 .modal-feedback-button:focus {
+  background-color: var(--basic-red-d);
+  outline: none;
+}
+
+.modal-feedback-button:active {
   background-color: var(--basic-red-dark);
   outline: none;
 }
@@ -1798,9 +1812,11 @@ ul.footer-site-navigation {
   color: var(--basic-white);
   margin-right: 10px;
 }
-.modal-command-buttons a:active,
 .modal-command-buttons a:hover,
 .modal-command-buttons a:focus {
+  background-color: var(--basic-red-d);
+}
+.modal-command-buttons a:active {
   background-color: var(--basic-red-dark);
 }
 .modal-added-to-cart-button {
